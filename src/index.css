@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-white overflow-hidden m-0 p-0 font-sans;
+  }
+}
+
+/* Custom Scrollbar for the Console */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 51, 102, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 243, 255, 0.5);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 243, 255, 0.8);
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-md border border-neon-blue/30 rounded-xl shadow-[0_0_15px_rgba(0,243,255,0.1)];
+}
